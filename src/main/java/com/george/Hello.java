@@ -6,9 +6,12 @@ public class Hello {
 //        new Person().hello();
         Person p = new Person();
         p.hello();
-        int age = 19; //Primitive data types (short, int, long, float, double, char, string, boolean)
+        p.weight = 66.5f;
+        p.height = 1.7f;
+        System.out.println(p.bmi());
+        /*int age = 19; //Primitive data types (short, int, long, float, double, char, string, boolean)
         Integer age2 = 19;; //Reference data types, or named "Wrapper Class"
         char c = 'A';
-        Character c2 = c;
+        Character c2 = c;*/
     }
 }

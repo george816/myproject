@@ -3,7 +3,8 @@ package com.george
 fun main() {
 //    println("Hello Kotlin")
 //    Human().hello()
-    val h = Human(66.5f, 1.7f)
+//    val h = Human(66.5f, 1.7f)
+    val h = Human(weight = 66.5f, height = .7f)
     h.hello()
     println(h.bmi())
 //    val age = 19; //可不指定資料型態，由Kotlin自動給定，稱作變數型態的自動推斷
@@ -14,7 +15,15 @@ fun main() {
     name = "Hank"*/
 }
 
-class Human(var weight: Float, var height: Float ) {
+//class Human(var weight: Float, var height: Float, var name: String = "" ) {
+class Human(var name: String = "", var weight: Float, var height: Float) {
+    init {
+        println("test $weight")
+//        println("test" + weight)
+    }
+
+//    constructor(name: String, weight: Float, height: Float) : this(weight, height)
+
     fun bmi(): Float {
         var bmi = weight / (height * height)
         return bmi

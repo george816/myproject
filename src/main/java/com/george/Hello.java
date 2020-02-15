@@ -4,7 +4,7 @@ public class Hello {
     public static void main(String[] args) {
 //        System.out.println("Hello World");
 //        new Person().hello();
-        Person p = new Person();
+        Person p = new Person("George", 66.6f, 1.7f);
         p.hello();
         p.weight = 66.5f;
         p.height = 1.7f;

@@ -7,6 +7,10 @@ fun main() {
     val h = Human(weight = 66.5f, height = .7f)
     h.hello()
     println(h.bmi())
+    val score = 88;
+    println(score > 60)
+    var c: Char = 'A'
+    println(c.toInt() > 60)
 //    val age = 19; //可不指定資料型態，由Kotlin自動給定，稱作變數型態的自動推斷
 //    val age2 : Int = 19; //可指定資料型態，在Kotlin只有參照資料型態，因此首字母皆大寫
 //    var weight = 66.5; //預設以Double存有小數之數字
